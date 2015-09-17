@@ -9,7 +9,7 @@
  */
 angular.module('cardkitApp')
   .controller('MainCtrl', function ($scope, saveSvgAsPng, themeConfig) {
-    
+
     $scope.config = {
       sizes: [
         {
@@ -23,10 +23,15 @@ angular.module('cardkitApp')
           height: 320,
         },
         {
-          name: 'Video',
+          name: 'Instagram',
           width: 640,
-          height: 360,
+          height: 640
         },
+        {
+          name: 'Pinterest',
+          width: 735,
+          height: 1000
+        }
       ],
       themes: themeConfig,
       output: {
@@ -206,7 +211,7 @@ angular.module('cardkitApp')
     function readFile(file, key) {
       var reader = new FileReader();
 
-      reader.onload = function() { 
+      reader.onload = function() {
         $scope.config.svg.elements[key].src = reader.result;
         $scope.$apply();
       };
