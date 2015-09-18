@@ -14,23 +14,23 @@ angular.module('cardkitApp')
       sizes: [
         {
           name: 'Facebook',
-          width: 800,
-          height: 370,
+          width: 600,
+          height: 314,
         },
         {
           name: 'Twitter',
-          width: 650,
-          height: 320,
+          width: 512,
+          height: 256,
         },
         {
           name: 'Instagram',
-          width: 640,
-          height: 640
+          width: 540,
+          height: 540
         },
         {
           name: 'Pinterest',
-          width: 735,
-          height: 1000
+          width: 367,
+          height: 551
         }
       ],
       themes: themeConfig,
@@ -96,7 +96,7 @@ angular.module('cardkitApp')
           {
             name: 'Logo',
             type: 'image',
-            width: 250,
+            width: 100,
             height: function() {
               return this.width;
             },
@@ -104,8 +104,8 @@ angular.module('cardkitApp')
               return $scope.theme.logoSrc;
             },
             opacity: 1,
-            x: 50,
-            y: 270,
+            x: 40,
+            y: 150,
             preserveAspectRatio: 'xMinYMin meet',
             editable: {
               src: true,
@@ -125,8 +125,8 @@ angular.module('cardkitApp')
               return $scope.theme.headlineFont;
             },
             textAnchor: 'start',
-            x: 50,
-            y: 250,
+            x: 40,
+            y: 150,
             draggable: true,
             editable: {
               text: true,
@@ -143,7 +143,7 @@ angular.module('cardkitApp')
           {
             name: 'Headline',
             type: 'text',
-            text: 'Edit this text, and drag it around.\n\nYou can upload your own background image,\nlogo, and change the colour of the text too.',
+            text: 'Edit and rearrange this text.',
             fill: function() {
               return $scope.theme.quote;
             },
@@ -152,8 +152,8 @@ angular.module('cardkitApp')
               return $scope.theme.headlineFont;
             },
             textAnchor: 'start',
-            x: 50,
-            y: 55,
+            x: 40,
+            y: 80,
             draggable: true,
             editable: {
               text: true,
