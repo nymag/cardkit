@@ -120,7 +120,7 @@ angular.module('cardkitApp')
             fill: function() {
               return $scope.theme.quote;
             },
-            fontSize: 12,
+            fontSize: 14,
             fontFamily: function() {
               return $scope.theme.headlineFont;
             },
@@ -131,10 +131,11 @@ angular.module('cardkitApp')
             editable: {
               text: true,
               fontSize: {
-                'Small (12px)' : 12,
-                'Medium (18px)': 18,
-                'Large (22px)': 22,
-                'Extra Large (36px)': 36,
+                '14px - Extra Small': 14,
+                '16px - Small': 16,
+                '22px - Medium': 22,
+                '26px - Large': 26,
+                '36px - Extra Large': 36
               },
               fill: 'picker',
               textAnchor: true
@@ -160,10 +161,11 @@ angular.module('cardkitApp')
               fill: 'picker',
               textAnchor: true,
               fontSize: {
-                'Small (18px)': 18,
-                'Medium (26px)': 26,
-                'Large (32px)': 32,
-                'Extra Large (40px)': 40,
+                '14px - Extra Small': 14,
+                '16px - Small': 16,
+                '22px - Medium': 22,
+                '26px - Large': 26,
+                '36px - Extra Large': 36
               },
             },
           },
@@ -236,4 +238,9 @@ angular.module('cardkitApp')
         scale: $scope.config.output.scale
       });
     };
+
+    $scope.orderByValue = function (value, name) {
+      console.log(value, name)
+      return value;
+    }
   });
