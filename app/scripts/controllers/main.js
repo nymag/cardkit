@@ -122,7 +122,7 @@ angular.module('cardkitApp')
             },
             fontSize: 14,
             fontFamily: function() {
-              return $scope.theme.headlineFont;
+              return $scope.theme.creditFont || $scope.theme.headlineFont;
             },
             textAnchor: 'start',
             x: 40,
@@ -195,7 +195,7 @@ angular.module('cardkitApp')
     });
 
     $scope.resetSvg = function() {
-      $scope.config.svg = $scope.defaultConfig.svg
+      $scope.config.svg = $scope.defaultConfig.svg;
       createConfigCopy();
     };
 
@@ -240,7 +240,7 @@ angular.module('cardkitApp')
     };
 
     $scope.orderByValue = function (value, name) {
-      console.log(value, name)
+      console.log(value, name);
       return value;
-    }
+    };
   });
