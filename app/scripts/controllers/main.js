@@ -148,7 +148,7 @@ angular.module('cardkitApp')
             fill: function() {
               return $scope.theme.quote;
             },
-            fontSize: 26,
+            fontSize: 36,
             fontFamily: function() {
               return $scope.theme.headlineFont;
             },
@@ -161,11 +161,12 @@ angular.module('cardkitApp')
               fill: 'picker',
               textAnchor: true,
               fontSize: {
-                '14px - Extra Small': 14,
                 '16px - Small': 16,
                 '22px - Medium': 22,
                 '26px - Large': 26,
-                '36px - Extra Large': 36
+                '36px - Extra Large': 36,
+                '46px - XX Large': 46,
+                '56px - XXX Large': 56
               },
             },
           },

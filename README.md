@@ -4,6 +4,15 @@
 
 ## Version 1.0.0
 
+NYMAG Dev: We'll probably want to update to v2 at some point. In the meanwhile, the [WCJ cardkit readme](https://github.com/WSJ/cardkit-watermark#setup-and-run-locally) is useful as a guide to getting this to run locally.
+
+Requirements include: [Bower](https://bower.io), [Grunt](https://gruntjs.com/), [Node v0.12](https://nodejs.org/en/), [Ruby (2.6)](https://www.ruby-lang.org/en/), [Compass](http://compass-style.org/install/), and [Sass](https://sass-lang.com/install).
+
+Deployment: 
+  - grunt build (compiles app to `/dist`)
+  - `aws s3 cp s3://nymag-cardkit [local dir] --recursive` (save a backup to local)
+  - `aws s3 sync dist s3://nymag-cardkit` (push app up to s3)
+
 ### 2015 [Chris Hutchinson](http://www.github.com/chrishutchinson) for The [Times and Sunday Times](http://www.github.com/times)
 
 CardKit is flexible, SVG image / card creation tool, with simple configuration options, which is easy to extend.
