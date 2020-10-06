@@ -4,7 +4,7 @@
 
 ## Version 1.0.0
 
-NYMAG Dev: We'll probably want to update to v2 at some point. In the meanwhile, the [WCJ cardkit readme](https://github.com/WSJ/cardkit-watermark#setup-and-run-locally) is useful as a guide to getting this to run locally.
+NYMAG Dev: We'll probably want to update to v2 at some point. In the meanwhile, the [WCJ cardkit readme](https://github.com/WSJ/cardkit-watermark#setup-and-run-locally) is useful as a guide to getting this to run locally. If you run into issues running `grunt serve`, check [this thread](https://stackoverflow.com/questions/24382098/grunt-serve-concurrentserver-aborts-due-to-warnings)
 
 Requirements include: [Bower](https://bower.io), [Grunt](https://gruntjs.com/), [Node v0.12](https://nodejs.org/en/), [Ruby (2.6)](https://www.ruby-lang.org/en/), [Compass](http://compass-style.org/install/), and [Sass](https://sass-lang.com/install).
 
